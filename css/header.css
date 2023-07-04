@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+:root {
+  --background:#262626;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Montserrat;
+  font-weight: 400;
+}
+
+header {
+  background: var(--background);
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 70px;
+}
+
+.logo-box {
+  display: flex;
+  
+}
+.logo-box img {
+  display: none;
+}
+
+h1{
+  color: white;
+  margin-left: 40%;
+  font-size: 26px;
+  padding-top: 15px;
+}
+
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: white;
+  height: 2px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: '';
+  position: absolute;
+}
+
+.nav-toggle-label span::before {
+  bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+  top: 7px;
+}
+
+nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background: var(--background);
+  width: 100%;
+  transform: scale(1,0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+}
+
+.nav-items ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-items li {
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+.nav-items a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+
+.nav-items a:hover {
+  color: whitesmoke;
+}
+
+nav .search {
+  margin-left: 20px;
+  display: flex;
+  height: 35px;
+  padding: 2px;
+  background: #fff;
+  width:200px;
+  border-radius: 7px;
+  border: 1px solid rgba(155,155,155,0.2);
+  position: relative; 
+}
+
+.search-data {
+  border-radius: 7px;
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+  color: black;
+  font-size: 14px;
+  border: none;
+  font-weight: 500;
+  background: none;
+}
+
+.search input[type=submit] {
+  font-family: "Font Awesome 5 Free";
+}
+
+.nav-toggle:checked ~ nav {
+  transform: scale(1,1);
+}
+
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+
+
+.inputSearch {
+  padding: 0 15px;
+  color:#fff;
+  font-size: 17px;
+  background: orange;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.inputSearch:hover{
+  background: orange;
+}
+
+nav .login {
+  text-decoration: none;
+  color: #fff;
+  background: orange;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  list-style: none;
+  text-align: center;
+  width: 70px;
+  height: 27px;
+  font-weight: 600;
+  text-align: center;
+  position: relative;
+  padding-left: 4px;
+  padding-top: 4px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  display: flex;
+}
+
+.login i {
+  font-size: 15px;
+
+  padding-top: 2.5px;
+}
+
+form input[name="logout"]{
+  padding-left: 9px;
+  padding-top: 2px;
+}
+
+@media screen and (min-width:1250px) {
+  .nav-toggle-label{
+      display: none;
+  }
+
+  header {
+      display: grid;
+      grid-template-columns: 0fr auto minmax(600px, 6fr) 0.3fr;
+      height: 70px;
+  }
+  .logo-box {
+      grid-column: 2 /3;
+  }
+
+  .logo-box img {
+    display: block;
+    height: 70px;
+   width: 70px;
+   margin-right: 10px;
+  }
+
+  h1 {
+    font-size: 28px;
+    margin-left: 0px;
+    text-align: center;
+    padding-top: 15px;
+  }
+
+  nav {
+      all: unset;
+      grid-column: 3/4;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+  }
+
+  nav .nav-items ul {
+      display: flex;
+      padding: 0px;
+      
+  }
+
+  nav .search {
+    margin-left: 50px;
+    
+  }
+
+  nav .login {
+    margin-left: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .nav-items li {
+      margin-left: 3em;
+      margin-bottom: 0;
+  }
+  .nav-items a {
+      opacity: 1;
+      position: relative;
+  }
+  .nav-items a::before {
+      content: '';
+      display: block;
+      height: 3.5px;
+      background: orange;
+      position: absolute;
+      border-radius: 5px;
+      bottom: -.4em;
+      left: 0;
+      right: 0;
+      transform: scale(0,1);
+      /*transform-origin: right;*/
+      transition: transform ease-in-out 250ms;
+  }
+
+  .nav-items a:hover::before {
+      transform: scale(1,1);
+  }
+}

@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-left: 220px;
+}
+
+h2 {
+    padding-top: 130px;
+    font-size: 30px;
+}
+
+.about {
+    margin-top: 40px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 40px;
+}
+
+@media (max-width:1050px) {
+    .container {
+        margin-left: 100px;
+    }
+}
+
+@media (max-width:850px) {
+    .container {
+        margin-left: 60px;
+    }
+}

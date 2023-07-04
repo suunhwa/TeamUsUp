@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 10;
+    padding: 100px;
+    box-sizing: border-box;
+    background: #fff;
+}
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+table {
+    border-collapse: collapse;
+}
+
+.container {
+   text-align: center;
+   padding: 30px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.form-box {
+    margin-bottom: 70px;
+    padding-top: 20px;
+    
+}
+.form-box .search-field{
+    height: 50px;
+    padding: 20px;
+    border-style:solid;
+    border-color: orange;
+    border-radius: 25px 0 0 25px;
+    outline:none;
+    width: 450px;
+}
+
+.form-box .search-btn{
+    height: 50px;
+    width: 80px;
+    background: orange;
+    border: none;
+    color: #fff;
+    border-radius: 0 25px 25px 0;
+    margin-left: -6px;
+    cursor: pointer;
+}
+
+.form-box .search-btn:hover{
+    background: #ffc107;
+}
+
+.user-table {
+    width: 95%;
+    border-top: 2px solid rgba(255, 153, 0, 0.432);
+    border-bottom: 2px solid rgba(255, 153, 0, 0.432);
+
+    margin-bottom: 40px;
+
+}
+
+.user-table tr {
+    border-bottom: 1px solid #ccc;
+}
+
+.user-table th{
+    padding: 15px 20px;
+    font-size: 17px;
+}
+.user-table td {
+    padding: 15px 20px;
+    font-size: 15px;
+    
+}
+
+
+
+.user-table thead{
+    border-bottom: 2px solid rgba(255, 153, 0, 0.432);
+}
+
+.user-table td {
+    text-align: center;
+}
+
+.user-table .name {
+    text-align: center;
+}
+
+.user-table .name:hover {
+    text-decoration: underline;
+}
+
+
+.container .paging {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0;
+    margin-left: 6%;
+
+}
+
+.container .paging a {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: 100px;
+    font-size: 12px;
+}
+
+.container .paging a:first-child {
+    margin-left: 0;
+}
+
+.container .paging a.btn {
+    border: 1px solid #eee;
+    background: #eee;
+}
+
+.container .paging a.num{
+    border: 1px solid orange;
+    font-weight: 900;
+    color:orange;
+    cursor: pointer;
+}
+
+.container .paging a.num.on {
+    background: white;
+    color:orange;
+}
+.container .paging a.num:hover {
+    background-color: orange;
+    color: #fff;
+}
+
+.btn-grp {
+    border-radius: 100px;
+    width: 80px;
+    height: 35px;
+    color: #3C5087;
+    background: white;
+    border: 2px solid orange;
+    border-bottom: 3px solid orange;
+      box-shadow: 1px 1px 1px 1px rgba(182, 124, 17, 0.308);
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14.5px;
+  
+}
+.btn-grp:hover {
+    background-color: orange;
+    color: #fff;
+    
+}
+.btn-grp:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px orange;
+}
+footer p {
+    word-spacing: 2px;
+    text-align:right;
+    padding: 10px 15px;
+}
+
+.margin {
+    margin-bottom: 40px;
+}
+
+/*.margin {
+    margin-bottom: 40px;
+}*/
+
+@media (max-width:900px){
+    
+    .form-box {
+        padding-top: 60px;
+        margin-left: -20px;
+    }
+    .form-box .search-field {
+        width: 280px;
+        height: 40px;
+    }
+    .form-box .search-btn {
+        height: 44px;
+    }
+    .user-table {
+        width: auto;
+    }
+    
+
+    .container .paging {
+        margin-left: 0;
+    }
+
+    .btn-grp {
+        width: 130px;
+        
+    }
+}
+@media (max-width:850px) {
+   
+    .form-box {
+        margin-left: -10px;
+        padding-top: 60px;
+    }
+    .form-box .search-field {
+        width: 270px;
+        height: 40px;
+    }
+    .form-box .search-btn {
+        height: 44px;
+        width: 60px;
+    }
+    .user-table {
+        width: auto;
+        margin-left: 0px;
+        
+    }
+    
+
+    .container .paging {
+        margin-left: 0;
+    }
+
+    .btn-grp {
+        width: 90px;
+        
+    }
+}
+
+@media (max-width:650px) {
+    
+    .form-box {
+        padding-top: 60px;
+        margin-left: -30px;
+    }
+    .form-box .search-field {
+        width: 200px;
+        height: 40px;
+    }
+    .form-box .search-btn {
+        height: 44px;
+        width: 50px;
+       font-size: 12px;
+    }
+    .user-table {
+        width: auto;
+        margin-left: -70px;
+        
+    }
+}

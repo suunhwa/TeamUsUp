@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-left: 210px;
+}
+
+.review-box {
+  display: flex;
+  
+}
+
+h2 {
+    font-size: 27px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    padding-top: 110px;
+}
+
+.reg {
+    font-size: 17px;
+    width: 140px;
+    color: rgba(34, 34, 34, 0.973);
+    font-weight: 500;
+    float: left;
+    text-align: right;
+    margin-right: 10px;
+    margin-top: 4px;
+}
+
+#group {
+  margin-top: 4px;
+}
+.review ul li {
+    list-style: none;
+    margin: 5px 0;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.rating {
+  position: absolute;
+  transform: rotateY(180deg);
+  display: flex;
+  margin-left: 40px;
+  margin-top: 13px;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  display: block;
+  cursor: pointer;
+  width: 50px;
+  padding-left: 10px;
+  position: relative;
+}
+
+.rating label::before {
+  content: '\f005';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  position: absolute;
+  display: block;
+  font-size: 30px;
+  color: #1d1c1c;
+
+}
+
+
+
+.rating label::after {
+  content: '\f005';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  font-size: 30px;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  display: block;
+  color: #fd4;
+  transition: 0.5s;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.rating label:hover::after,
+.rating label:hover ~ label::after,
+.rating input:checked ~ label::after {
+  opacity: 1;
+}
+
+.desc {
+  margin-top: 73px;
+  margin-left: 40px;
+}
+
+.desc p {
+  margin-bottom: 10px;
+}
+
+textarea {
+  width: 70%;
+  height: 100px;
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+
+  .submit {
+    position: absolute;
+    margin-left: 29%;
+    margin-top: 30px;
+    color: rgb(49, 48, 48);
+    font-weight: 600;
+    background-color: orange;
+    border-style: solid;
+    border-color: rgb(224, 148, 7);
+    box-shadow: 1px 1px 1px 1px rgba(182, 124, 17, 0.308);
+    width: 90px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 7px;
+  }
+  
+  .submit:hover {
+    background: rgba(255, 166, 0, 0.877);
+    color: whitesmoke;
+  }
+
+  .rev  {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 0px;
+    font-weight: bold;
+    text-align: center; 
+  }
+  

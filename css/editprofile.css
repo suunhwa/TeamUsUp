@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {    
+    margin-left: 350px;
+}
+h2 {
+    padding-top: 140px;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+form .name-box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.lname-box {
+    margin-left: 20px;
+}
+
+.lname, .fname, .pw, .email {
+    width: 200px;
+    height: 30px;
+} 
+.about-box {
+    margin-bottom: 30px;
+}
+
+.about-box p {
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 50%;
+    height: 100px;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.pw-box {
+    margin-bottom: 20px;
+
+}
+
+.email-box {
+    margin-bottom: 20px;
+
+}
+
+.pw {
+    margin-left: 3px;
+}
+
+.email {
+    margin-left: 30px;
+}
+
+.btn-save {
+    display: flex;
+
+}
+
+.btn-save input:active {
+    transform: translateY(2px);
+}
+
+/*.btn-save input {
+    margin-left: 40%;
+    width: 10%;
+    height: 30px;
+    font-weight: bold;
+    background-color: rgba(255, 166, 0, 0.788);
+    border-color: rgb(224, 148, 7);
+    box-shadow: 1px 1px 1px 1px rgba(182, 124, 17, 0.308);
+    font-size: 14px;
+    border-radius: 5px;
+    transition: all 0.1s;
+    cursor: pointer;
+}
+
+.btn-save input:hover {
+    background: rgb(252, 241, 241);
+}*/
+
+.btn-save input{
+    position: absolute;
+    text-decoration: none;
+        font-size: 14px;
+        width: 80px;
+        height: 35px;
+        border-radius: 7px;
+        color: #3C5087;
+        background: white;
+        border: 1px solid orange;
+        border-bottom: 3px solid orange;
+          box-shadow: 1px 1px 1px 1px rgba(182, 124, 17, 0.308);
+        cursor: pointer;
+        font-weight: 500;
+        margin-left: 33%;
+        
+}
+
+.btn-save input:hover {
+        background: rgb(255, 194, 80);
+        color: white;
+        font-weight: 600;
+}
+.btn-save input:focus {
+        outline: none;
+        box-shadow: 0 0 0 1px orange;
+}
+
+.btn-save:active{
+    transform: translateY(2px);
+}
+
+.btn {
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 8px 15px 8px 15px;
+    display: inline-block;
+    border-radius: 5px;
+    transition: all 0.1s;
+}
+
+.btn:active{
+    transform: translateY(2px);
+}
+
+.btn.deactivate {
+    font-size: 14px;
+    margin-top: 30px;
+    color: white;
+    background-color: rgb(221, 44, 44);
+    border-bottom: 3px solid rgb(173, 32, 32);
+    text-shadow: 0px -2px rgba(122, 16, 16, 0.349);
+    cursor: pointer;
+}
+
+.btn.deactivate:hover {
+    background: rgb(221, 44, 44);
+}
+
+@media(max-width:850px) {
+    .container {    
+        margin-left: 200px;
+    }
+ 
+}

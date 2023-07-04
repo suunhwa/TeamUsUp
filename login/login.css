@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Monda&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Monda', sans-serif;
+ 
+}
+
+.header {
+    width: 100vw;
+    height: 120px;
+    position: sticky;
+    display: flex;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    line-height: 1.7;
+    background-size: cover;
+    background-position: top;
+    
+    
+}
+.logo-box {
+    position: absolute;
+    top:0px;
+    left: 0px;
+}
+ 
+.logo {
+    width: 120px;
+    height: 120px;
+}
+
+.text-box {
+    position: absolute;
+   
+    top:60px;
+    left: 270px;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+
+.text-box a {
+    text-decoration: none;
+    color: #fff;
+    /*text-shadow: 0 0 5px;*/
+    cursor: pointer;
+}
+
+.text-box a:hover {
+    background: rgb(192, 187, 187);
+    cursor: pointer;
+}
+
+
+.text-box p {
+    
+    font-weight: 700;
+    
+    font-size: 45px;
+}
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-42%);
+    background: rgba(0, 0, 0, 0.8);
+    padding: 3%;
+    width:400px;
+    height: 400px;
+    
+}
+.login-form {position: relative; z-index: 2;}
+
+.black {
+    width:260px;
+    height: 60px;
+   
+}
+.int-area {
+    width: 90%; position: relative;
+    margin-top: 8%;
+}
+.int-area:first-child {margin-top: 0;}
+.int-area input {
+    width: 100%;
+    padding: 20px 10px 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #999;
+    font-size: 1.2em; color: #fff;
+    outline: none;
+}
+.int-area label {
+    position: absolute; left: 10px; top: 15px;
+    font-size: 1em; color: #999;
+    transition: all .5s ease;
+}
+.int-area label.warning {
+    color: red !important;
+    animation: warning .3s ease;
+    animation-iteration-count: 3;
+}
+@keyframes warning {
+    0% {transform: translateX(-8px);}
+    25% {transform: translateX(8px);}
+    50% {transform: translateX(-8px);}
+    75% {transform: translateX(8px);}
+}
+.int-area input:focus + label,
+.int-area input:valid + label {
+    top: -2px;
+    font-size: 0.85em; color: #71b7e6;
+}
+.btn-area {margin-top: 30px;}
+.btn-area button {
+    width: 100%; height: 42px;
+    background: #71b7e6;
+    color: #fff;
+    font-size: 1.25em;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.caption {
+    margin-top: 20px;
+    text-align: center;
+}
+.caption a {
+    font-size: 0.95em; color: #999;
+    text-decoration: none;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color:rgba(255, 255, 255, 0.801);
+    align-items: center;
+}
+
+.footer-box {
+    text-align:right;
+    padding: 10px 20px;
+}
+
+.footer-box p {
+    word-spacing: 2px;
+
+}

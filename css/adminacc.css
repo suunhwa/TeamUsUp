@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-left: 400px;
+}
+
+
+h2 {
+    font-size: 27px;
+    font-weight: 500;
+    padding-top: 130px;
+}
+
+
+.acc {
+    margin-top: 50px;
+    list-style: none;
+    margin-left: 40px;
+    overflow: auto;
+    
+}
+
+.acc::-webkit-scrollbar{
+    width: 10px;
+  }
+  
+  .acc::-webkit-scrollbar-thumb{
+    background-color: #FAD291;
+    border-radius: 10px;
+    
+  }
+  
+  .acc::-webkit-scrollbar-track{
+    background-color: rgba(128, 128, 128, 0.575);
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px white;
+  }
+.details{
+    font-size: 17px;
+    width: 170px;
+    color: black;
+    font-weight: 400;
+    float: left;
+    text-align: left;
+    
+}
+
+.acc input {
+    width: 300px;
+    height: 35px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid rgba(66, 65, 65, 0.726);
+    border-radius: 7px;
+    padding: 10px;
+}
+.acc input:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px orange;
+  }
+  
+#fname:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px orange;
+    border-top: 2px solid rgb(196, 131, 12);
+}
+
+.btn-save input:active {
+    transform: translateY(2px);
+  }
+  
+  .btn-save input{
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 20px;
+    color: whitesmoke;
+    font-weight: 600;
+    background-color: orange;
+    border-style: solid;
+    border-color: rgb(255, 166, 0);
+    box-shadow: 1px 1px 1px 1px rgba(182, 124, 17, 0.308);
+    width: 90px;
+    height: 37px;
+    cursor: pointer;
+    border-radius: 7px;
+  }
+  
+  .btn-save input:hover {
+    background: rgba(255, 166, 0, 0.877);
+   
+  }
+
+  .btn-save input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px orange;
+  }
+  form .gender-details .gender-title {
+    font-size: 14px;
+    font-weight: 500;
+    color:rgb(185, 147, 76);
+}
+
+form .gender-details .category {
+   display: flex;
+    width: 15%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+
+.gender-details .category label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #999;
+}
+
+.gender-details .category .dot{
+    height: 18px;
+    width: 18px;
+    background: #d9d9d9; 
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+}
+
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two
+{
+    border-color: #d9d9d9;
+    background: orange; 
+}
+form input[type="radio"] {
+    display: none;
+}
+
+
+@media (max-width:850px){
+    .container {
+        margin-left: 80px;
+    }
+
+    h2 {
+        font-size: 24px;
+        padding-top: 100px;
+        margin-bottom: 20px;
+    }
+    .acc {
+        margin-left: 10px;
+        width: 400px;
+        height: 400px;
+      
+    }
+    .details {
+        font-size: 15px;
+    }
+    .acc input {
+        width: 280px;
+    }
+    form .gender-details .category {
+        width: 60%;
+        margin: 20px 0;
+    }
+    .btn-save input {
+        margin-left: 300px;
+        height: 25px;
+        width: 70px;
+        padding: 5px;
+        font-size: 14px;
+        font-weight: 600;
+        margin-top: -20px;
+    }
+}

@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+  margin-left: 400px;
+  list-style: none;
+}
+
+
+h2 {
+  font-size: 27px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  padding-top: 130px;
+}
+
+.container p {
+  font-size: 20px;
+}
+
+.container p, #offering, #year {
+  display:inline-flex;
+  margin-left: 15px;
+}
+
+#offering, #year {
+  width: 130px;
+  height: 30px;
+  border-radius: 7px;
+}
+
+.unit-box {
+  margin-left: 15px;
+  width: 700px;
+  height: 400px;
+  overflow-y: auto;
+  overflow-x: auto;
+  white-space: nowrap;
+
+}
+
+.box {
+  border-radius: 10px;
+  display: flex;
+  box-shadow: 1px 7px 14px -5px rgba(0,0,0,0.15);
+  height: 40px;
+    width: 100px;
+    background:rgba(245, 245, 245, 0.363);
+    border: 1px solid rgba(255, 166, 0, 0.856);
+    box-shadow: 1px 1px 1px 1px rgba(182, 124, 17, 0.308);
+    margin-top: 20px;
+}
+
+
+.details input {
+  border: none;
+  width: 100px;
+  background: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding:10px;
+  padding-left: 13px;
+    
+}
+
+.box .close-icon {
+  height: 4px;
+  width: 4px;
+  line-height: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #878787;
+  margin-left: -20px;
+  margin-top: 2px;
+}
+
+
+.btn-save input:active {
+    transform: translateY(2px);
+  }
+  
+.btn-save input{
+    position: absolute;
+    margin-left: 800px;
+    margin-top: 40px;
+    color: whitesmoke;
+    font-weight: 600;
+    background-color: orange;
+    border-style: solid;
+    border-color: rgb(255, 166, 0);
+    box-shadow: 1px 1px 1px 1px rgba(182, 124, 17, 0.308);
+    width: 90px;
+    height: 37px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+  
+.btn-save input:hover {
+    background: rgba(255, 166, 0, 0.877);
+   
+}
+
+
+@media (max-width:850px){
+  .container {
+      margin-left: 80px;
+  }
+  .unit-box {
+    width: 570px;
+    height: 450px;
+  }
+
+  .btn-save input {
+    margin-left: 550px;
+  }
+}

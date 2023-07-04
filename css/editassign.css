@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-left: 400px;
+}
+
+
+h2 {
+    font-size: 27px;
+    font-weight: 500;
+    padding-top: 130px;
+}
+
+.assign{
+    margin-top: 50px;
+    list-style: none;
+    margin-left: 40px;
+    
+    
+}
+
+.details{
+    font-size: 17px;
+    width: 150px;
+    color: black;
+    font-weight: 400;
+    float: left;
+    text-align: left;
+    
+}
+
+.assign input {
+    width: 300px;
+    height: 35px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid rgba(66, 65, 65, 0.726);
+    border-radius: 7px;
+    padding: 7px;
+}
+
+textarea {
+    width: 500px;
+    height: 120px;
+    border: 1px solid rgba(66, 65, 65, 0.726);
+    border-radius: 7px;
+    padding: 7px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.assign input:focus,
+textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px orange;
+}
+
+.btn-save input:active {
+    transform: translateY(2px);
+  }
+  
+.btn-save input{
+    position: absolute;
+    margin-left: 580px;
+    margin-top: 40px;
+    text-decoration: none;
+    font-size: 14px;
+    width: 90px;
+    height: 37px;
+    border-radius: 10px;
+    color: #3C5087;
+    background: white;
+    border: 1px solid orange;
+    border-bottom: 3px solid orange;
+      box-shadow: 1px 1px 1px 1px rgba(182, 124, 17, 0.308);
+    cursor: pointer;
+    font-weight: 600;
+}
+  
+.btn-save input:hover {
+    background: rgba(255, 166, 0, 0.877);
+    color: #fff;
+   
+}
+
+.btn-save input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px orange;
+}
+
+.btn-delete input{
+    position: absolute;
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 435px;
+    margin-top: 40px;
+    color: white;
+    background-color: rgb(221, 44, 44);
+    border-color: rgb(173, 32, 32);
+    border-bottom: 3px solid rgb(173, 32, 32);
+    border-radius: 7px;
+    text-shadow: 0px -2px rgba(122, 16, 16, 0.349);
+    cursor: pointer;
+    width: 130px;
+    height: 37px;
+    font-weight: 500;
+    
+}
+
+.btn-delete input:hover {
+    background: rgba(221, 44, 44, 0.849);
+   
+}
+
+.btn-delete input:active{
+    transform: translateY(2px);
+}
+
+.btn-delete input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgb(173, 32, 32);
+}
+
+@media (max-width:850px){
+    .container {
+        margin-left: 80px;
+    }
+    h2 {
+       padding-top: 120px;
+        font-size: 22px;
+    }
+    
+    .assign {
+        margin-left: 0px;
+    }
+    .details{
+        font-size: 16px;
+        width: 90px;
+        color: black;
+        font-weight: 400;
+        float: left;
+        text-align: left;
+    }
+    .assign input {
+        width: 280px;
+        font-size: 15px; 
+    }
+
+    textarea {
+        width: 400px;
+        height: 120px;
+        font-size: 15px;
+    }
+    .btn-delete input {
+        margin-left: 220px;
+        margin-top: 50px;
+        width: 100px;
+        height: 35px;
+        font-size: 13px;
+    }
+    
+    .btn-save input {
+        margin-left: 340px;
+        margin-top: 50px;
+        width: 60px;
+        height: 35px;
+        font-size: 13px;
+    }
+    
+
+  }

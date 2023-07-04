@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>TeamUsUp</title>
+        <link rel="stylesheet" href="login.css">
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <style>
+             html {
+               
+            background: linear-gradient(rgba(190, 189, 189, 0.5),rgba(190, 189, 189, 0.5)), url(Murdoch-University.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+         }
+           
+        </style>
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo-box">
+                <img src="./Murdoch_port_Redbox-300x300.png" alt="logo" class="logo">
+            </div>
+            <div class="text-box">
+                <p><a href="#">TeamUsUp</a></p>
+            </div>
+
+        </header>
+
+        <div class ="login-box">
+        <section class="login-form">
+            <h1><img src="./murdoch black logo.png" alt="black" class="black"></h1>
+            <FORM action="">
+                <div class="int-area">
+                    <input type="text" name="id" id="id"
+                    autocomplete="off" required>
+                    <label for="id">USER NAME</label>
+                </div>
+                <div class="int-area">
+                    <input type="password" name="pw" id="pw"
+                    autocomplete="off" required>
+                    <label for="pw">PASSWORD</label>
+                </div>
+                <div class="btn-area">
+                    <button id="btn"
+                    type="submit">LOGIN</button>
+                </div>
+            </FORM>
+            <div class="caption">
+                <a href="">Forgot Passord?</a>
+            </div>
+        </section>
+        </div>
+        
+        
+        
+
+
+        <script>
+            let id = $('#id');
+            let pw = $('#pw');
+            let btn = $('#btn');
+
+            $(btn).on('click', function () {
+                if($(id).val() == "") {
+                    $(id).next('label').addClass('warning');
+                    setTimeout(function() {
+                        $('label').removeClass('warning');
+                    },1500);
+                }
+                else if($(pw).val() == "") {
+                    $(pw).next('label').addClass('warning');
+                    setTimeout(function() {
+                        $('label').removeClass('warning');
+                    },1500);
+                }
+            });
+        </script>
+    
+        
+         
+    <footer class="footer">
+        <div class="footer-box">
+
+                <p>Murdoch University &copy; FTGroup08 TeamUsUp  </p>
+  
+            
+        </div>
+    </footer>          
+       
+    </body>
+</html>

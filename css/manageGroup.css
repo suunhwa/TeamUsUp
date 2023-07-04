@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+  
+.container {
+   margin-left: 350px;
+}
+
+.cgrp-box {
+     display: flex;
+     padding-top: 110px;
+}
+
+.left, .mem {
+    list-style: none;
+}
+
+li .reg {
+    font-size: 17px;
+    width: 130px;
+    color: black;
+    font-weight: 400;
+    float: left;
+    text-align: left;
+    margin-top: 30px;
+}
+
+li #unit, #assign, #class, #semester, #offID {
+    width: 270px;
+    height: 40px;
+    padding: 8px;
+    margin-top: 30px;
+    border: 0.7px solid rgba(53, 51, 51, 0.74);
+    border-radius: 7px;
+}
+
+.mem {
+    margin-left: 120px;
+}
+
+li label[for="mem"], .addStud{
+    font-size: 17px;
+    width: 180px;
+    color: black;
+    font-weight: 400;
+    float: left;
+    text-align: left;
+    margin-top: 30px;
+}
+
+li #mem {
+    width: 270px;
+    height: 40px;
+    padding: 8px;
+    margin-top: 30px;
+    border: 0.7px solid rgba(53, 51, 51, 0.74);
+    border-radius: 7px;
+}
+
+#slctStud, #grpName, #grpLeader {
+    width: 270px;
+    height: 40px;
+    padding: 8px;
+    margin-top: 30px;
+    border: 0.7px solid rgba(53, 51, 51, 0.74);
+    border-radius: 7px;
+}
+
+li #unit:focus, 
+#assign:focus, 
+#class:focus, 
+#semester:focus, 
+#offID:focus, 
+li #mem:focus, 
+#slctStud:focus, 
+#grpName:focus, 
+#grpLeader:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px orange;
+}
+.btn-add input{
+    position: absolute;
+    color: rgb(255, 145, 0);
+    font-weight: 600;
+    background-color: whitesmoke;
+    border-style: solid;
+    border-color: rgb(255, 166, 0);
+    width: 60px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 7px;
+    margin-left: 470px;
+    margin-top: -33px;
+  } 
+  .btn-add input:hover,
+  .btn-create input:hover,
+  .btn-remove input:hover {
+    background: rgba(255, 166, 0, 0.877);
+    color: white;
+  
+  } 
+  .btn-add input:active,
+  .btn-create input:active,
+  .btn-remove input:active{
+      transform: translateY(2px);
+  }
+
+
+.btn-cancel input {
+    position: absolute;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    width: 90px;
+    height: 35px;
+    border-radius: 10px;
+    color: #3C5087;
+    background: white;
+    border: 1px solid rgb(173, 32, 32);
+    border-bottom: 3px solid rgb(173, 32, 32);
+    border-radius: 7px;
+    box-shadow: 1px 1px 1px 1px rgba(122, 16, 16, 0.349);
+    cursor: pointer;
+    margin-left: 540px;
+    margin-top: 70px;
+    
+}
+.btn-cancel input:hover{
+    background: rgba(221, 44, 44, 0.945);
+    color: white;
+    font-weight: 600;
+}
+/*.btn-create input {
+    position: absolute;
+    
+    font-size: 15px;
+    color: whitesmoke;
+    font-weight: 600;
+    background-color: orange;
+    border-style: solid;
+    border-color: rgb(238, 156, 3);
+    box-shadow: 1px 1px 1px 1px rgba(182, 124, 17, 0.308);
+    width: 130px;
+    height: 37px;
+    cursor: pointer;
+    border-radius: 7px;
+    margin-left: 395px;
+    margin-top: 70px;
+    
+}*/
+
+.btn-create input{
+    position: absolute;
+    text-decoration: none;
+        font-size: 14px;
+        width: 120px;
+        height: 35px;
+        border-radius: 7px;
+        color: #3C5087;
+        background: white;
+        border: 1px solid orange;
+        border-bottom: 3px solid orange;
+          box-shadow: 1px 1px 1px 1px rgba(182, 124, 17, 0.308);
+        cursor: pointer;
+        font-weight: 500;
+        margin-left: 395px;
+        margin-top: 70px;
+        
+}
+
+.btn-create input:hover {
+        background: rgb(255, 194, 80);
+        color: white;
+        font-weight: 600;
+}
+.btn-create input:focus {
+        outline: none;
+        box-shadow: 0 0 0 1px orange;
+}
+.btn-cancel input:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px red;
+}
+
+.btn-remove input {
+    position: absolute;
+    text-decoration: none;
+    color: rgb(255, 145, 0);
+    font-weight: 600;
+    background-color: whitesmoke;
+    border-style: solid;
+    border-color: rgb(224, 148, 7);
+    box-shadow: 1px 1px 1px 1px rgba(182, 124, 17, 0.308);
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 7px;
+    margin-left: 470px;
+    margin-top: -33px;
+}
+
+.btn-delete input{
+    position: absolute;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(221, 44, 44);
+    border-color: rgb(173, 32, 32);
+    border-bottom: 3px solid rgb(173, 32, 32);
+    border-radius: 7px;
+    text-shadow: 0px -2px rgba(122, 16, 16, 0.349);
+    cursor: pointer;
+    width: 130px;
+    height: 35px;
+    font-weight: 500;
+    margin-top: 70px;
+    margin-left: 395px;
+    
+}
+  
+.btn-delete input:hover {
+    background: rgba(221, 44, 44, 0.733);
+     
+}
+  
+.btn-cancel input:active,
+.btn-delete input:active{
+    transform: translateY(2px);
+}
+
+@media (max-width:850px) {
+    .container {
+      margin-left: 90px;
+      
+    }
+
+    .cgrp-box {
+      padding-top: 40px;
+      display:inline-block;
+    }
+    
+    .mem {
+        margin-left: 0px;
+    }
+
+    li .reg {
+        width: 180px;
+    }
+
+    .btn-cancel input{
+        margin-left: 480px;
+    }
+    .btn-delete input {
+        margin-left: 330px;
+    }
+    .btn-create input {
+        margin-left: 330px;
+    }
+  }

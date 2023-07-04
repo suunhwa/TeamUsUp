@@ -1,0 +1,167 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-left: 400px;
+  list-style: none;
+}
+
+h2 {
+  font-size: 27px;
+  font-weight: 500;
+  margin-bottom: 35px;
+  padding-top: 130px;
+}
+
+.container p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.container p, #offering, #year {
+  display:inline-flex;
+  margin-left: 15px;
+}
+
+#offering, #year {
+  width: 130px;
+  height: 30px;
+  border-radius: 7px;
+}
+
+.table-box {
+  width: auto;
+  height: 350px;
+  overflow-y: auto;
+  margin-top: 20px;
+}
+
+.table-box::-webkit-scrollbar{
+  width: 10px;
+}
+
+.table-box::-webkit-scrollbar-thumb{
+  background-color: #FAD291;
+  border-radius: 10px;
+  
+}
+
+.table-box::-webkit-scrollbar-track{
+  background-color: rgba(128, 128, 128, 0.575);
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 5px white;
+}
+
+table {
+  border-collapse: collapse;
+ 
+}
+
+
+thead td {
+  position: sticky;
+  top: 0;
+  background: rgb(255, 200, 98);
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 20px 50px;
+
+}
+
+
+tbody td {
+  /*padding: 20px 40px;*/
+ 
+  color: black;
+  text-align: center;
+  padding: 20px 50px;
+  
+}
+
+td input {
+  font-size: 14px;
+  width: 120px;
+  height: 33px;
+  border-radius: 10px;
+  color: #3C5087;
+  background: white;
+  border: 1px solid orange;
+    box-shadow: 1px 1px 1px 1px rgba(182, 124, 17, 0.308);
+  cursor: pointer;
+}
+td input:hover {
+  background: rgb(255, 194, 80);
+  color: white;
+  font-weight: 600;
+}
+
+td input:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px orange;
+}
+
+
+.btn-add input:active {
+    transform: translateY(2px);
+  }
+  
+  .btn-add input{
+      position: absolute;
+    color: whitesmoke;
+    font-weight: 600;
+    background-color: orange;
+    border-style: solid;
+    border-color: rgb(224, 148, 7);
+    box-shadow: 1px 1px 1px 1px rgba(182, 124, 17, 0.308);
+    width: 150px;
+    height: 37px;
+    cursor: pointer;
+    border-radius: 7px;
+    margin-left: 650px;
+    margin-top: 35px;
+    
+  }
+  
+  .btn-add input:hover{
+    background: rgba(255, 166, 0, 0.877);
+  
+  }
+
+  .btn-add input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px orange;
+  }
+
+  @media (max-width:850px){
+    .container {
+        margin-left: 80px;
+    }
+    h2 {
+      padding-top: 110px;
+      font-size: 26px;
+    }
+    .table-box {
+      width: 400px;
+      height: 300px;
+    }
+    thead td {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 16px;
+    }
+    tbody td {
+      font-size: 15px;
+    }
+    .btn-add input {
+      height: 30px;
+      width: 110px;
+      margin-left: 290px;
+    }
+
+    
+}

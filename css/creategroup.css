@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 70px;
+   margin-left: 300px;
+   
+}
+
+.left {
+  width: 50%;
+  float: left;
+
+}
+
+.mem {
+  width: 50%;
+  float: right;
+}
+
+.cgrp-box {
+  display: flex;
+}
+
+h2 {
+    font-size: 27px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    margin-left: 40px;
+}
+
+.reg {
+    font-size: 17px;
+    width: 200px;
+    color: rgba(34, 34, 34, 0.973);
+    font-weight: 500;
+    float: left;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.cgrp-box ul li {
+    list-style: none;
+    margin: 5px 0;
+    font-size: 14px;
+    padding: 10px;
+}
+
+
+
+.mem input[type=text] {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  margin-left: 220px;
+}
+
+
+
+
+#unit, #assign, input[type=text] {
+  width: 300px;
+  height: 25px;
+}
+
+.btn-save input:active {
+  transform: translateY(2px);
+}
+
+.btn-save input{
+  position: absolute;
+  margin-left: 450px;
+  margin-top: 370px;
+  color: whitesmoke;
+  font-weight: 600;
+  background-color: orange;
+  border-style: solid;
+  border-color: rgb(224, 148, 7);
+    box-shadow: 1px 1px 1px 1px rgba(182, 124, 17, 0.308);
+  width: 90px;
+  height: 37px;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.btn-save input:hover {
+  background: rgba(255, 166, 0, 0.877);
+}

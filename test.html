@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeamUsUp - Edit Group</title>
+    <style>  
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            margin-top: 50px;
+           margin-left: 350px;
+        }
+        
+        .cgrp-box {
+            margin-top: 20px;
+            display: flex;
+        }
+        
+        .left, .mem {
+            list-style: none;   
+            float: left;
+        }
+        
+        .mem {
+            margin-left: 120px;
+        }
+        
+        li .reg {
+            font-size: 17px;
+            width: 130px;
+            color: black;
+            font-weight: 400;
+            float: left;
+            text-align: left;
+            margin-top: 30px;
+        }
+        
+        
+        li #unit, #assign, #semester, #year {
+            width: 300px;
+            height: 40px;
+            padding: 8px;
+            margin-top: 30px;
+            border: 0.7px solid rgba(53, 51, 51, 0.74);
+            border-radius: 7px;
+        }
+        
+        li label[for="mem"], .addStud{
+            font-size: 17px;
+            width: 180px;
+            color: black;
+            font-weight: 400;
+            float: left;
+            text-align: left;
+            margin-top: 30px;
+        }
+        
+        li #mem {
+            width: 270px;
+            height: 40px;
+            padding: 8px;
+            margin-top: 30px;
+            border: 0.7px solid rgba(53, 51, 51, 0.74);
+            border-radius: 7px;
+        }
+        
+        .btn-delete input {
+            position: absolute;
+            font-size: 14px;
+            color: white;
+            font-size: 15px;
+            font-weight: 500;
+            background-color: rgb(221, 44, 44);
+            border-color: rgb(173, 32, 32);
+            border-bottom: 3px solid rgb(173, 32, 32);
+            border-radius: 7px;
+            text-shadow: 0px -2px rgba(122, 16, 16, 0.349);
+            cursor: pointer;
+            width: 130px;
+            height: 37px;
+            margin-top: 50px;
+            margin-left: 240px;
+            
+        }
+        
+        .btn-save input {
+            position: absolute;
+            font-size: 15px;
+            color: whitesmoke;
+            font-weight: 600;
+            background-color: orange;
+            border-style: solid;
+            border-color: rgb(238, 156, 3);
+            box-shadow: 1px 1px 1px 1px rgba(182, 124, 17, 0.308);
+            width: 80px;
+            height: 37px;
+            cursor: pointer;
+            border-radius: 7px;
+            margin-top: 50px;
+            margin-left: 390px;   
+        }
+        
+        .btn-delete input:hover {
+            background: rgba(221, 44, 44, 0.945);
+             
+        }
+        
+          
+        .btn-save input:hover {
+            background: rgba(255, 166, 0, 0.877);
+           
+        }
+        
+        .btn-delete input:active,
+        .btn-save input:active {
+            transform: translateY(2px);
+        }
+
+        </style>
+</head>  
+<body>
+    <div class="container">
+        <h2>Manage Group</h2>
+        <div class="cgrp-box">
+            <form class = "cgrp">
+                <ul>
+                    <div class="left">
+                        <li>
+                            <label class="reg" for="unit">Unit</label>
+                            <select id="unit">
+                                <option value="default" default>--No selection--</option>
+                                <option value="db">ICT285-Databases</option>
+                                <option value="cos">ICT287-Computer Security</option>  
+                                <option value="ea">ICT301-Enterprise Architectures</option>
+                                <option value="itp">ICT302-IT Professional Practice Project</option>
+                                <option value="sa">ICT373-Software Architectures</option>        
+                            </select>                   
+                        </li>
+                        <li>
+                            <label class="reg" for="assign">Assignment</label>
+                            <select id="assign">
+                                <option value="default" default>--No selection--</option>
+                                <option value="as1">Assignment 1</option>
+                                <option value="as2">Assignment 2</option>
+                                <option value="as2">Assignment 3</option>                
+                            </select>
+                        </li>
+                        <li>
+                            <label class="reg" for="semester">Semester</label>
+                            <input type="text" id="semester"> 
+                        </li>
+                        <li>
+                            <label class="reg" for="year">Year</label>
+                            <input type="text" id="year"> 
+                        </li>
+                    </div>
+                
+                    <div class="mem">
+                        <li>
+                            <label class="reg" for="mem">Group Members</label>
+                            <input type="text" id="mem" placeholder="Group leader..."> 
+                        </li>
+                        <li>
+                            <label class="reg" for="mem"></label>
+                            <input type="text" id="mem" placeholder="Member..."> 
+                        </li>
+                        <li>
+                            <label class="reg" for="mem"></label>
+                            <input type="text" id="mem" placeholder="Member..."> 
+                        </li>
+                        <li>
+                            <label class="reg" for="mem"></label>
+                            <input type="text" id="mem" placeholder="Member..."> 
+                        </li>
+                        <li>
+                            <label class="reg" for="mem"></label>
+                            <input type="text" id="mem" placeholder="Member..."> 
+                        </li>
+                        <li>
+                            <label class="reg" for="mem"></label>
+                            <input type="text" id="mem" placeholder="Member..."> 
+                        </li>
+                        <li>
+                            <label class="reg" for="mem"></label>
+                            <input type="text" id="mem" placeholder="Member..."> 
+                        </li>
+                        <div class="btn-save">
+                            <input type="submit" name="save" id="save" value="Submit">
+                        </div>
+
+                        <div class="btn-delete">
+                            <input type="button" name="delete" id="delete" onclick="location.href='#'" value="Delete Group">
+                        </div>
+                    </div> 
+                </ul>
+
+                
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

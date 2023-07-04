@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 10;
+    padding: 100px;
+    box-sizing: border-box;
+    background: #fff;
+}
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container {
+    margin-left: 50px;
+    width: 1200px;
+}
+h2 {
+    font-size: 27px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    padding-top: 40px;
+}
+
+.table-box {
+    width: auto;
+    height: 350px;
+    overflow-y: auto;
+    margin-top: 20px;
+}
+h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+ 
+}
+h4 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.table-box::-webkit-scrollbar{
+    width: 10px;
+  }
+  
+  .table-box::-webkit-scrollbar-thumb{
+    background-color: #FAD291;
+    border-radius: 10px;
+    
+  }
+  
+  .table-box::-webkit-scrollbar-track{
+    background-color: rgba(128, 128, 128, 0.575);
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px white;
+  }
+
+table { 
+    
+    border-collapse: collapse;
+   
+}
+
+.course-table thead{
+    border-top: 2px solid rgba(255, 153, 0, 0.432);
+    border-bottom: 2px solid rgba(255, 153, 0, 0.432);
+}
+
+
+table thead td {
+    color: black;
+    font-size: 18px;
+    padding: 15px 30px;
+    font-weight: 600;
+}
+td {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #222;
+}
+
+td input[name="unitID"]{
+    text-decoration: none;
+    border: none;
+    width: 100px;
+    font-size: 18px;
+ 
+}
+td input[name="unitID"]:focus {
+    outline: none;
+
+}
+.credit {
+    text-align: center;
+}
+
+/*td input[name="selCourse"]{
+    text-decoration: none;
+    font-size: 14px;
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+    color: #3C5087;
+    background: white;
+    border: 1px solid orange;
+    border-bottom: 3px solid orange;
+      box-shadow: 1px 1px 1px 1px rgba(182, 124, 17, 0.308);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+td input[name="selCourse"]:hover {
+    background: rgb(255, 194, 80);
+    color: white;
+    font-weight: 600;
+}
+td input[name="selCourse"]:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px orange;
+}
+
+td input[name="unitID"]{
+    text-decoration: none;
+    border: none;
+    font-size: 18px;
+    width: auto;
+    font-weight:400;
+}
+form input[type="text"]{
+    font-weight: 400;
+}*/
+.btn input {
+        text-decoration: none;
+            font-size: 14px;
+            width: 70px;
+            height: 30px;
+            border-radius: 10px;
+            color: #3C5087;
+            background: white;
+            border: 1px solid orange;
+            border-bottom: 3px solid orange;
+              box-shadow: 1px 1px 1px 1px rgba(182, 124, 17, 0.308);
+            cursor: pointer;
+            font-weight: 600;
+}
+    
+.btn input:hover {
+            background: rgb(255, 194, 80);
+            color: white;
+            font-weight: 600;
+    }
+    .btn input:focus {
+            outline: none;
+            box-shadow: 0 0 0 1px orange;
+    }
+
+    footer p {
+        word-spacing: 2px;
+        text-align:right;
+        padding: 10px 15px;
+    }
+    
+    .margin {
+        margin-bottom: 40px;
+    }
+
+    @media (max-width:1250px){
+        .container {
+            margin-left:0px;
+        }
+       
+        .table-box {
+            width: auto;
+        }
+    }
+
+    @media (max-width:1150px){
+        .container {
+            margin-left:-40px;
+        }
+        table thead td {
+            font-size: 16px;
+            padding: 15px 20px;
+        }
+    
+        td {
+            font-size: 16px;
+            padding: 15px 20px;
+        }
+        .table-box {
+            width: auto;
+        }
+    }
+@media (max-width:1050px){
+    .container {
+        margin-left:-70px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    table thead td {
+        font-size: 16px;
+        padding: 15px 10px;
+    }
+
+    td {
+        font-size: 16px;
+        padding: 15px 10px;
+    }
+    .table-box {
+        width: auto;
+    }
+}
+
+/*
+@media (max-width:1400px) {
+    .container {
+        width: 800px;
+    }
+    h3 {
+        margin-top: 80px;
+    }
+}
+
+@media (max-width:1000px) {
+    .container {
+        width: 700px;
+    }
+    h3 {
+        margin-top: 80px;
+    }
+}
+
+@media (max-width:900px) {
+    .container {
+        width: 600px;
+        margin-left: 20px;
+    }
+    h3 {
+        margin-top: 80px;
+    }
+}
+
+@media (max-width:600px) {
+    .container {
+        width: 300px;
+        margin-left: -70px;
+    }
+    h3 {
+        margin-top: 80px;
+    }
+}*/
