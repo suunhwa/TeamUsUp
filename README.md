@@ -1,18 +1,39 @@
 # TeamUsUp
 
-This is a final project in the university. I was charged of UI design and front end development. 
+**TeamUsUp** 프로젝트는 대학생들이 팀 프로젝트를 구성할 때, 서로의 협업 이력을 바탕으로 팀원을 평가하고, 효율적인 팀을 구성할 수 있도록 도와주는 PHP 기반의 웹 포털입니다.  
+학생 리뷰, 수강 신청, 팀 프로필 조회 등 다양한 기능을 통해 팀워크 기반 협업 환경을 제공합니다.
 
-### ⚡ About TeamUsUp
-A web-based portal for students to:
-- Review potential teammate’s strengths and weaknesses.
-- Build an ideal team based on each others' specialisations.
+### 🛠️ 기술 스택
+- 프론트엔드: HTML5, CSS3
+- 백엔드: PHP
+- 데이터베이스: MySQL (추정)
 
-TeamUsUp can help:
-- Develop student’s portfolio for future employers.
-- Encourage students to participate and excel in groups, as their profile ratings will reflect their performance.
+### 🔍 주요 기능
+#### 📚 수업 및 팀 관리
+- 수강 신청 및 등록된 수업 확인
+- 같은 수업을 듣는 학생 목록 조회
+- 팀원 등록 및 팀 프로필 구성
 
-### ⚡ Purpose of the project
-The purpose of this project is to provide students with a web portal where they can review students whom they have worked with and view the reviews of other students allowing them to make better decisions when forming a group. Students will also be able to view the reviews made by others about them, allowing them to improve their abilities as a team worker. Additionally, future recruiting companies will have access to a verified teamwork history of a potential employee. With such a platform, students may be more open to the thought of trying to team up with those who they have not worked with personally before in order to expand their network as they now have access to the teamwork history of their fellow students.
+#### ⭐ 리뷰 기능
+- 학생 간 상호 리뷰 작성 (협업 성향, 강점, 개선점 등)
+- 자신이 받은 리뷰 확인 가능
+- 리뷰 기반으로 팀 선택 시 참고 가능
 
-### ⚡ User Manual
-https://mia-projects.notion.site/TeamUsUp-User-Manual-aeeffabe22244f5e93cd6d51facf9cfe
+#### 👀 팀 검색 및 평가 기반 탐색
+- 타인의 팀 프로필 열람 (구성원, 리뷰, 평점 등)
+- 팀을 평가한 사용자 목록 확인 기능 포함
+- 이상적인 팀을 찾기 위한 다각적 비교 가능
+
+#### 📋 마이페이지
+- 나의 팀 이력, 수업, 리뷰 기록 확인
+- 리뷰 통계 및 평균 평점 시각화
+- 내가 남긴 리뷰와 받은 리뷰 전체 조회
+
+### 👨‍💻 담당 역할
+- 프론트엔드 개발 및 UI 디자인 전담
+- HTML/CSS를 활용하여 모든 페이지 직접 구현
+- 페이지 구성: 로그인/회원가입, 수강신청, 팀 구성, 마이페이지, 팀 리뷰 등
+- 사용자의 흐름에 맞춘 직관적인 화면 설계 및 기능 배치
+- 사용자 매뉴얼 작성: 기능 흐름, 화면별 설명 정리
+
+[📓 TeamUsUp User Manual](https://mia-projects.notion.site/TeamUsUp-User-Manual-aeeffabe22244f5e93cd6d51facf9cfe)
